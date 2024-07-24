@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Carousel</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"/>
+    <link rel="stylesheet" href="dashboard.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=League+Spartan&family=Source+Sans+Pro&display=swap">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <img src="medhavi-logo.png" alt="Logo">
+        </div>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li class="dropdown">
+                <a href="#">About</a>
+                <ul class="dropdown-content">
+                    <li><a href="#">Academics</a></li>
+                    <li><a href="#">Non-Academics</a></li>
+                    <li><a href="#">Miscellaneous</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a href="#">My Projects</a>
+                <ul class="dropdown-content">
+                    <li><a href="#">My Project 1</a></li>
+                    <li><a href="#">My Project 2</a></li>
+                    <li><a href="#">My Project 3</a></li>
+                    <li><a href="#">My Project 4</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a href="#">Social</a>
+                <ul class="dropdown-content">
+                    <li><a href="#"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
+                    <li><a href="#"><i class="fas fa-envelope"></i> Gmail</a></li>
+                    <li><a href="#"><i class="fas fa-phone"></i> Contact No</a></li>
+                    <li><a href="#"><i class="fab fa-instagram"></i> Instagram</a></li>
+                </ul>
+            </li>
+        </ul>
+        <div class="auth-buttons">
+            <button class="login" onclick="redirectToLogin()">Login</button>
+        </div>
+    </nav>
+
+    <div class="carousel">
+        <div class="dots-container">
+            <span class="dot" onclick="currentSlide(1)"></span> 
+            <span class="dot" onclick="currentSlide(2)"></span> 
+            <span class="dot" onclick="currentSlide(3)"></span> 
+            <span class="dot" onclick="currentSlide(4)"></span> 
+        </div>
+
+        <div class="carousel-slide fade">
+            <img src="img11.png" alt="Image 1">
+            <div class="text">
+                <h1 style="font-family: 'League Spartan', sans-serif; font-size: 80px; margin-bottom: 40px;">Cyber Security</h1>
+                <p style="font-family: 'Source Sans Pro', sans-serif; font-size: 26px; margin-top: 0px;">Equipped with in-depth knowledge and hands-on experience in protecting digital assets from evolving threats, ensuring data integrity and confidentiality.</p>
+                <button class="hire-me-btn">Hire Me</button>
+            </div>
+        </div>
+        
+
+        <div class="carousel-slide fade">
+            <img src="img44.png" alt="Image 2">
+            <div class="text opposite">
+                <h1 style="font-family: 'League Spartan', sans-serif; font-size: 80px; margin-bottom: 40px;">Network Security</h1>
+                <p style="font-family: 'Source Sans Pro', sans-serif; font-size: 26px; margin-top: 0px;">Skilled in securing network infrastructure, preventing unauthorized access, and ensuring data integrity and confidentiality.</p>
+                <button class="hire-me-btn">Hire Me</button>
+            </div>
+        </div>
+        
+        <div class="carousel-slide fade">
+            <img src="img22.png" alt="Image 3">
+            <div class="text opposite">
+                <h1 style="font-family: 'League Spartan', sans-serif; font-size: 80px; margin-bottom: 40px;">Cloud Computing</h1>
+                <p style="font-family: 'Source Sans Pro', sans-serif; font-size: 26px; margin-top: 0px;">Experienced in leveraging cloud platforms to optimize performance, ensure data security, and manage scalable solutions.</p>
+                <button class="hire-me-btn">Hire Me</button>
+            </div>
+        </div>
+        
+
+        <div class="carousel-slide fade">
+            <img src="Img33.png" alt="Image 4">
+            <div class="text">
+                <h1 style="font-family: 'League Spartan', sans-serif; font-size: 80px; margin-bottom: 40px;">Communication Skills</h1>
+                <p style="font-family: 'Source Sans Pro', sans-serif; font-size: 26px; margin-top: 0px;">Confident and articulate in delivering presentations, leading discussions, and engaging audiences.</p>
+                <button class="hire-me-btn">Hire Me</button>
+            </div>
+        </div>
+    <br> 
+    </div> 
+    <footer>
+        <div class="footer-content">
+            <ul class="footer-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">My Projects</a></li>
+            </ul>
+            <ul class="footer-icons">
+                <li><a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
+                <li><a href="mailto:your-email@example.com"><i class="fas fa-envelope"></i> Gmail</a></li>
+                <li><a href="tel:+1234567890"><i class="fas fa-phone"></i> Contact No</a></li>
+                <li><a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i> Instagram</a></li>
+            </ul>
+        </div>
+        <div id="map"></div>
+    </footer>
+    <script src="dashboard.js"></script>
+    <script src="https://unpkg.com/leaflet"></script>
+</body>
+</html>
